@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate:generete": "drizzle-kit generate --name",
-    "migrate:seed": "node -r esbuild-register src/lib/db/seed.ts",
+    "seed": "node -r esbuild-register src/lib/db/seed.ts",
     "migrate": "drizzle-kit migrate"
   },
   "dependencies": {
