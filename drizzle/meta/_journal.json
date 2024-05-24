@@ -1,0 +1,27 @@
+{
+  "version": "6",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1716528325638,
+      "tag": "0000_init-table-category-articles",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1716565476751,
+      "tag": "0001_add-comment-table",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716569287587,
+      "tag": "0002_add-tags-table",
+      "breakpoints": true
+    }
+  ]
+}

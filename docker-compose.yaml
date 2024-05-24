@@ -1,0 +1,23 @@
+version: "3"
+container_name: boilerplate
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: boilerplate_db
+    volumes:
+      - ./data:/var/lib/postgresql/data
+   adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+        - postgres
