@@ -14,4 +14,5 @@ export default defineConfig({
     table: "migrations",
     schema: "public",
   },
+  driver: "node-postgres",
 } as Config);

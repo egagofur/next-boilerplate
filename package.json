@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "migrate:generete": "drizzle-kit generate --name",
-    "migrate:push": "drizzle-kit migrate",
-    "studio": "drizzle-kit studio --host 127.0.0.1"
+    "migrate:seed": "node -r esbuild-register src/lib/db/seed.ts",
+    "migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "drizzle-orm": "^0.30.10",
